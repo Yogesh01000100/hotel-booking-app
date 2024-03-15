@@ -12,6 +12,7 @@ Welcome to the repository of the Gogaga Holidays website, a responsive web platf
 
 ## Images/Screenshots
 ![alt text](image.png)
+![alt text](image-1.png)
 ## Technologies
 
 - HTML
