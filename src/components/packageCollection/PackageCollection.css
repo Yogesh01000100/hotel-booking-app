@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.package-collections-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel .collection {
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-width: 250px;
+}
+
+.carousel .collection img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.carousel .collection h3,
+.carousel .collection p {
+  padding: 0 15px;
+  margin: 10px 0;
+}
+
+.carousel .collection:hover {
+  transform: translateY(-5px);
+}
+
+.package-collections-carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.package-collections-carousel button:hover {
+  background-color: #004494;
+}
+
+.package-collections-carousel button:first-of-type {
+  left: 10px;
+}
+
+.package-collections-carousel button:last-of-type {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel .collection {
+    width: 90%;
+  }
+
+  .carousel {
+    justify-content: center;
+  }
+}
+
+
+.package-collections-carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 2;
+  
+    font-size: 16px; 
+  }
+
+  @media (max-width: 768px) {
+    .carousel .collection {
+      width: 90%;
+    }
+  
+    .carousel {
+      justify-content: center; 
+    }
+  
+    .package-collections-carousel button {
+      padding: 5px 10px;
+      font-size: 14px;
+      width: 30px; 
+    }
+  }
+  

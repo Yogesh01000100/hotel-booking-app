@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/header/header';
+import Home from './components/Home/home';
+import HolidayPackages from './components/holidayPackage/holidayPackage';
+import HotelBooking from './components/hotelBooking/hotelBooking';
+import PackageCollections from './components/packageCollection/packageCollection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/holiday-packages" element={<HolidayPackages />} />
+        <Route path="/hotel-booking" element={<HotelBooking />} />
+        <Route path="/package-collections" element={<PackageCollections />} />
+      </Routes>
+    </Router>
   );
 }
 

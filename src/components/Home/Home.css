@@ -1,0 +1,187 @@
+.home {
+    padding: 1rem;
+    text-align: center;
+  }
+
+
+  .headers-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .hero {
+    flex: 1;
+    max-width: 600px; 
+   
+  }
+  
+  .hero-secondary {
+    flex: 1; 
+    max-width: 600px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .headers-container {
+      flex-direction: column;
+    }
+  
+    .hero, .hero-secondary {
+      max-width: 100%; 
+    }
+  }
+  
+  
+  
+  .hero {
+    background-image: url('../../assets/pexels-jiawei-cui-2310835.jpg');
+    background-size: cover;
+    color: #fff;
+    margin-right: 50px;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease; 
+  
+}
+
+.hero:hover {
+    transform: scale(1.05); 
+  
+}
+
+  
+  .home-section {
+    margin-bottom: 2rem;
+  }
+  
+  .home-section h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .home-section button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .home-section button:hover {
+    background-color: #0056b3;
+  }
+  .bt{
+    padding: 10px 20px;
+    background-color: #00ffe134; 
+    color: white; 
+    border: 1px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 900; 
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+  .bt:hover {
+    background-color: #00b36b2b; 
+    color: #00ffd9; 
+    border-color: #f0fff4c9; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  }
+  
+ 
+  @media (min-width: 576px) {
+    .home-section button {
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .home {
+      padding: 2rem;
+    }
+    
+    .hero {
+      padding: 3rem;
+      text-align: left;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    
+  }
+  
+
+  .home-section {
+    margin: 2rem 0;
+    padding: 1rem;
+    text-align: center; 
+  }
+  
+  .home-section h2 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: #0056b3; 
+  }
+  
+  .home-section button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;}
+  
+  .home-section button:hover {
+    background-color: #004494;
+  }
+  
+
+  .featured-packages button.view-all {
+    padding: 1rem 2rem;
+    font-weight: 600; 
+  }
+  
+
+  .book-hotel button.book-hotel-btn {
+    background-color: #f8b400; 
+  }
+  
+
+  .package-collections button.explore-collections {
+    padding: 0.75rem 1.5rem;
+  }
+  
+
+  @media (max-width: 768px) {
+    .home-section h2 {
+      font-size: 1.5rem; 
+    }
+  
+    .home-section button {
+      width: 100%; 
+      padding: 0.75rem;
+    }
+  
+
+    .home-section {
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+  }
+  
